@@ -1,0 +1,31 @@
+/**
+ * Auto Generated Java Class.
+ */
+import edu.princeton.cs.algs4.StdRandom;
+import edu.princeton.cs.algs4.StdStats;
+import edu.princeton.cs.algs4.WeightedQuickUnionUF;
+
+public class PercolationStats {
+  
+    public PercolationStats(int n, int trails) { 
+        /* YOUR CONSTRUCTOR CODE HERE*/
+    }
+    public double mean() {
+  
+    }
+    public double stddev() {
+  
+    }
+    public double confidenceLo() {
+  
+    }
+    public double confidenceHi() {
+  
+    }
+    public static void main(String[] args) { 
+    
+    }
+  
+    /* ADD YOUR CODE HERE */
+  
+}
