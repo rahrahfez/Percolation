@@ -1,27 +1,26 @@
 /**
  * Auto Generated Java Class.
  */
-import edu.princeton.cs.algs4.StdRandom;
-import edu.princeton.cs.algs4.StdStats;
 import edu.princeton.cs.algs4.WeightedQuickUnionUF;
 
 public class Percolation {  
     private int[] flag; // 0-closed 1-open
-    private int sizeOfGrid;
     private boolean isBlocked; // if isBlocked is true, it is open
+    private int sizeOfGrid;
     private static int counter = 0; // keeps track of opened blocks on grid
     private WeightedQuickUnionUF uf;
     
     public Percolation(int n) { 
         // Create n-by-n grid, with all sites blocked
-        flag = new int[n*n];
-        sizeOfGrid = n*n;
+        flag = new int[n];
+        sizeOfGrid = n;
         isBlocked = false; // all blocks in grid are blocked
+        uf = new WeightedQuickUnionUF(n);
     }
     public void open(int row, int col) {
         // open site (row, col) if it is not already open
-        if (isBlocked == false) {
-            isBlocked == true;
+        row = uf.find(row);
+        col = uf.find(col);
             counter++;
         }
     }
@@ -40,6 +39,9 @@ public class Percolation {
     public boolean percolates() {
         // does the system percolate?
   
+    }
+    public int sizeOfGrid() {
+        return uf.count();
     }
     public boolean isInbounds(int x, int y) {
         if (x < 1 || x > sizeOfGrid || y < 1 || y > sizeOfGrid) 
