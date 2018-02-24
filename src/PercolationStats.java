@@ -8,7 +8,7 @@ import edu.princeton.cs.algs4.WeightedQuickUnionUF;
 public class PercolationStats {
   
     public PercolationStats(int n, int trails) { 
-        /* YOUR CONSTRUCTOR CODE HERE*/
+        
     }
     public double mean() {
   
@@ -26,6 +26,6 @@ public class PercolationStats {
     
     }
   
-    /* ADD YOUR CODE HERE */
+   
   
 }
